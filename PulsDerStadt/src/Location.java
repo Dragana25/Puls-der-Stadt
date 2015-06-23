@@ -2,8 +2,8 @@ public class Location {
 	public int id;
 	private String name;
 	private String adress;
-	private double lat;
-	private double let;
+	private double latitude;
+	private double longitude;
 	private double avgAtmosphere;
 	private double avgVisitors;
 	private double avgwTime;
@@ -12,22 +12,13 @@ public class Location {
 	private double avgPuls;
 	private int countRev;
 
-	public Location(int id, String name, String adress, double lat, double let,
-			double avgAtmosphere, double avgVisitors, double avgwTime,
-			double avgService, double avgAge, double avgPuls, int countRev) {
+	public Location(int id, String name, String adress, double lat, double let) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.adress = adress;
-		this.lat = lat;
-		this.let = let;
-		this.avgAtmosphere = avgAtmosphere;
-		this.avgVisitors = avgVisitors;
-		this.avgwTime = avgwTime;
-		this.avgService = avgService;
-		this.avgAge = avgAge;
-		this.avgPuls = avgPuls;
-		this.countRev = countRev;
+		this.latitude = lat;
+		this.longitude = let;
 	}
 
 	public void update(Review r) {
